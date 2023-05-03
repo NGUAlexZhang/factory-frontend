@@ -23,8 +23,8 @@ export const deleteStaff = (id) => request({
     method: 'delete',
     data: {id}
 })
-export const putStaff = (id, name, birth, sex, attend) => request({
+export const putStaff = (id, name, join_date, sex, attend) => request({
     url: '/staff',
     method: 'put',
-    data: {id, name, birth, sex, attend}
+    data: {id, name, join_date, sex, attend}
 })
